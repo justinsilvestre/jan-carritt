@@ -1,0 +1,229 @@
+$brown: #351717;
+$grey: #565249;
+$tan: #C07C43;
+$gold: #BB9911;
+$darkergrey: #111111;
+$darkgrey: #5D5D5D;
+$medgrey: #999999;
+$lightgrey:#CCCCCC;
+$darkblue: #071222;
+$blue: #0d1f3a;
+$lightblue: #C9DAEB;
+$bgblue: #CFE6FF;
+
+$full-width: 960px;
+
+html { font-size: 100%;}
+body {  }
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.top {
+	width:100%;
+	height: 600px;
+	
+	background-color:$brown;
+	-webkit-box-shadow: inset 0px -33px 77px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px -33px 77px -4px rgba(0,0,0,0.75);
+box-shadow: inset 0px -33px 77px -4px rgba(0,0,0,0.75);
+}
+.top-bar {
+	width: 100%;
+	background-color:$darkergrey;
+}
+.nav {
+	width: $full-width;
+	height: 50px;
+	margin: 0 auto;
+
+
+}
+
+
+.header {
+	width: $full-width;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.header-home {
+	background-image: url(portraithoriz.jpg);
+	background-size: 100% auto;
+}
+.banner-home {
+	width:240px;
+	margin-left:10%;
+	height:100%;
+
+	background-color: rgba(55,55,55,.5);
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.79);
+	font-family: 'Georgia', serif;
+
+	a:link, a:active, a:visited {
+			color:#FFFFFF;
+			text-decoration: none;
+	}
+	a:hover {
+		color: #F5B400;
+	}
+
+	& > ul {
+		padding: 0;
+		margin:120px 0 0 0;
+		width: 100%;
+		list-style-type: none;
+		&:before {
+			background:url(logobarw.png) center no-repeat;
+			background-size: 90% 20px;
+			content:"";
+			width:240px;
+			height:20px;
+			display:block;
+		}
+		&:after {
+			background:url(logobarupw.png) center no-repeat;
+			background-size: 90% 20px;
+			content:"";
+			width:240px;
+			height:20px;
+			display:block;
+		}
+		& > li {
+			margin: 0 auto 10px auto;
+			padding: 0 0 0 0;
+
+			
+			&:last-child > ul { border: 0; margin-bottom: 0;}
+			
+			font-variant:small-caps;
+			font-size: 28px;
+			font-weight: bold;
+			text-align: center;
+			&:last-child { font-size:20px; margin-bottom: 0;}
+			ul{
+				list-style-type:none;
+				padding: 0 0 10px 0;
+				margin: 0 20px 0 20px;
+				font-size: 14px;
+				font-variant: normal;
+				font-weight: 100;
+				border-bottom:dotted 1px #252525;
+				li {
+					padding: 0 7px 0 7px;
+					margin: 0;
+					display: inline-block;
+				}
+			}
+
+		}
+	}
+
+	p {
+		margin: 0 20px 0 0;
+		padding: 0;
+		font-variant:normal;
+		font-size: 16px;
+		font-weight: normal;
+		text-align: right;
+		a:after {
+			content: " »";
+		}
+	}
+
+}
+.logo-home {
+	width:350px;
+	height:150px;
+	position:relative;
+	top:150px;
+	left:-60px;
+	background-image: url(logo-letters.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+.middle {
+	width: 100%;
+	padding:20px 0 0 0;
+	position:relative;
+	background-color:$bgblue;
+	background-image:url(crosswordblue.png);
+}
+.main {
+	width:$full-width;
+	height:100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.home-left {
+	margin: 0 0 0 0;
+	padding: 20px;
+	margin-left: 20px;
+	width:360px;
+
+	font-family:'Helvetica', 'Helvetica World', 'Arial', sans-serif;
+	color: #636363;
+	background-image: url(crossword.png);
+	background-color:#FFFFFF;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.49);
+	   -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.49);
+	        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.49);
+	h1 {
+		margin: 0;
+		padding: 0;
+		color: #E86601;
+		font-family: 'Georgia', serif;
+		font-style: italic;
+		font-weight: normal;
+	}
+}
+
+.home-right {
+	width: 420px;
+	position: absolute;
+	margin-left: 480px;
+	font-family: 'Georgia', serif;
+	font-size: 18px;
+
+
+	h1 {
+				padding: 20px 0 0 0;
+		width: 300px;
+		height: 60px;
+		padding-left: 160px;
+		font-size: 28px;
+		font-family: 'Georgia', serif;
+		background-image: url(logobarwbirdt.png);
+		background-size: 100% auto;
+		margin: 0;
+		color:#485059;
+
+
+	}
+}
+
+
+.bottom {
+	width:100%;
+	height: 40px;
+	background-color:$darkergrey;
+	clear: left;
+}
+.footer {
+	width: $full-width;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.clear-both {
+	clear:left;
+}
