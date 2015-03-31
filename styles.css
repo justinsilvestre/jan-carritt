@@ -9,6 +9,7 @@ html, body {
 .top {
   width: 100%;
   height: 600px;
+  clear: both;
   background-color: #351717;
   -webkit-box-shadow: inset 0px -33px 77px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px -33px 77px -4px rgba(0, 0, 0, 0.75);
@@ -20,8 +21,26 @@ html, body {
 
 .nav {
   width: 960px;
-  height: 50px;
-  margin: 0 auto; }
+  height: 62px;
+  margin: 0 auto;
+  font-family: 'Helvetica', 'Helvetica World', 'Arial', sans-serif;
+  color: #9E9E9E;
+  font-size: 18px; }
+  .nav > ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .nav > ul li {
+      float: left; }
+      .nav > ul li a {
+        padding: 20px 20px;
+        display: block;
+        color: #9E9E9E;
+        text-decoration: none; }
+      .nav > ul li a:hover {
+        color: #FFFFFF;
+        background-color: #000000; }
 
 .header {
   width: 960px;
@@ -40,6 +59,8 @@ html, body {
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.79);
   font-family: 'Georgia', serif; }
+  .banner-home a:after {
+    content: " »"; }
   .banner-home a:link, .banner-home a:active, .banner-home a:visited {
     color: #FFFFFF;
     text-decoration: none; }
@@ -77,6 +98,8 @@ html, body {
       .banner-home > ul > li:last-child {
         font-size: 20px;
         margin-bottom: 0; }
+        .banner-home > ul > li:last-child ul {
+          margin-top: 8px; }
       .banner-home > ul > li ul {
         list-style-type: none;
         padding: 0 0 10px 0;
@@ -84,16 +107,16 @@ html, body {
         font-size: 14px;
         font-variant: normal;
         font-weight: 100;
-        border-bottom: dotted 1px #252525; }
+        border-bottom: dotted 1px #000000; }
         .banner-home > ul > li ul li {
           padding: 0 7px 0 7px;
           margin: 0;
           display: inline-block; }
   .banner-home p {
-    margin: 0 20px 0 0;
+    margin: 10px 20px 0 0;
     padding: 0;
-    font-variant: normal;
-    font-size: 16px;
+    font-variant: small-caps;
+    font-size: 18px;
     font-weight: normal;
     text-align: right; }
     .banner-home p a:after {
@@ -104,7 +127,8 @@ html, body {
   height: 150px;
   position: relative;
   top: 150px;
-  left: -60px;
+  left: -70px;
+  transform: rotate(10deg);
   background-image: url(logo-letters.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
@@ -124,7 +148,7 @@ html, body {
 
 .home-left {
   margin: 0 0 0 0;
-  padding: 20px;
+  padding: 25px;
   margin-left: 20px;
   width: 360px;
   font-family: 'Helvetica', 'Helvetica World', 'Arial', sans-serif;
@@ -137,12 +161,27 @@ html, body {
   -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.49);
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.49); }
   .home-left h1 {
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     color: #E86601;
     font-family: 'Georgia', serif;
     font-style: italic;
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 32px; }
+  .home-left p {
+    margin-bottom: 20px; }
+  .home-left p:last-child {
+    text-align: right; }
+    .home-left p:last-child a {
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #E86601;
+      text-decoration: none; }
+      .home-left p:last-child a:after {
+        content: " »"; }
+      .home-left p:last-child a:hover {
+        color: #FFFB00; }
 
 .home-right {
   width: 420px;
@@ -155,23 +194,29 @@ html, body {
     width: 300px;
     height: 60px;
     padding-left: 160px;
-    font-size: 28px;
+    font-size: 32px;
+    font-style: italic;
     font-family: 'Georgia', serif;
     background-image: url(logobarwbirdt.png);
     background-size: 100% auto;
     margin: 0;
-    color: #485059; }
+    color: #000000; }
 
 .bottom {
   width: 100%;
-  height: 40px;
+  height: 30px;
+  padding: 30px 0;
   background-color: #111111;
   clear: left; }
 
 .footer {
   width: 960px;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Helvetica', 'Helvetica World', 'Arial', sans-serif;
+  color: #9E9E9E;
+  text-align: center; }
 
 .clear-both {
   clear: left; }
