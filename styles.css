@@ -201,6 +201,21 @@ html, body {
     background-size: 100% auto;
     margin: 0;
     color: #000000; }
+  .home-right h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    clear: both; }
+  .home-right p {
+    margin-bottom: 20px;
+    margin-left: 30px; }
+  .home-right ul {
+    padding-left: 30px; }
+  .home-right .address {
+    float: left;
+    padding-right: 30px; }
+  .home-right strong {
+    font-style: italic; }
 
 .bottom {
   width: 100%;
