@@ -190,6 +190,16 @@ box-shadow: inset 0px -33px 77px -4px rgba(0,0,0,0.75);
 	height:100%;
 	margin: 0 auto;
 	position: relative;
+	a{
+			font-family: 'Georgia', serif;
+			font-weight: bold;
+			color: #FF811E;
+			text-decoration: none;
+			
+			&:hover {
+				color: #FFFB00;
+			}
+		}
 }
 
 .home-left {
@@ -222,37 +232,30 @@ box-shadow: inset 0px -33px 77px -4px rgba(0,0,0,0.75);
 	}
 	p:last-child {
 		text-align: right;
-		a {
-			font-family: 'Georgia', serif;
-			font-weight: bold;
-			font-size: 20px;
-			color: #E86601;
-			text-decoration: none;
-			&:after {
+		font-size: 20px;
+		a:after {
 				content: " »"
-			}
-			&:hover {
-				color: #FFFB00;
-			}
-		}
+			} 
 	}
 }
 
 .home-right {
-	width: 420px;
+	width: 460px;
 	position: absolute;
 	margin-left: 480px;
 	font-family: 'Georgia', serif;
 	font-size: 18px;
 
 
+
 	h1 {
 				padding: 20px 0 0 0;
-		width: 300px;
+		width: 440px;
+		padding-left:20px;
 		height: 60px;
-		padding-left: 160px;
-		font-size: 32px;
+		font-size: 36px;
 		font-style: italic;
+		text-align: center;
 		font-family: 'Georgia', serif;
 		background-image: url(logobarwbirdt.png);
 		background-size: 100% auto;
@@ -263,19 +266,30 @@ box-shadow: inset 0px -33px 77px -4px rgba(0,0,0,0.75);
 	h2 {
 		font-size:26px;
 		margin-bottom: 20px;
-		margin-left:40px;
+		text-align: center;
 		clear: both;
 	}
+
+	.rusty {
+		margin: 0 auto 20px auto;
+		width:400px;
+
+	}
+	.book {
+		color: #FFFFFF;
+		background-color: rgba(0,0,0,.5);
+		padding:20px;
+		border: double 3px #FFFFFF;
+	}
+
 	p {
 		margin-bottom: 20px;
-		margin-left:30px;
 	}
 	ul {
-		padding-left:30px;
 	}
 	.address {
 		float:left;
-				padding-right:30px;
+				padding-right:50px;
 	}
 	strong {
 		font-style: italic;
