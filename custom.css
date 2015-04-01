@@ -1,0 +1,87 @@
+body {
+  background-color: #111111; }
+
+.top-bar {
+  height: 4em; }
+
+.top {
+  background-color: #351717; }
+
+.bottom-half {
+  background: url(files/crosswordblue.png) #CFE6FF;
+  padding-top: 22.85714px; }
+
+.middle .main {
+  position: relative; }
+
+.bottom {
+  clear: left;
+  background: #111111;
+  font-size: 1em; }
+
+.container {
+  width: 100%; }
+
+.home-header {
+  height: 600px;
+  background: url(files/portrait.jpg);
+  background-size: 1000px auto; }
+
+.banner {
+  width: 240px;
+  height: 100%;
+  margin-left: 80px;
+  padding: 22.85714px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #1B1B1B;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .banner .logo {
+    width: 320px;
+    height: 150px;
+    margin-left: -40px;
+    background: url(files/logo.png) no-repeat;
+    background-size: 100% auto; }
+
+.contact {
+  position: absolute;
+  left: 480px;
+  width: 50%; }
+
+.bio {
+  width: 50%;
+  padding: 22.85714px;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(crossword.png) #F0F0F0;
+  font-family: "Helvetica", "Helvetica World", "Neue Helvetica", "Arial", sans-serif;
+  color: #636363;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5); }
+  .bio h1 {
+    color: #E86601;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-style: italic;
+    font-size: 2.1em;
+    margin-bottom: 22.85714px; }
+  .bio p {
+    margin-bottom: 22.85714px; }
+
+@media screen and (max-width: 500px) {
+  .block {
+    width: 100%; }
+
+  .nav > ul {
+    display: none; } }
+@media screen and (min-width: 1000px) {
+  .block {
+    width: 960px;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=custom.css.map */

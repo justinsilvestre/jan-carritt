@@ -1,0 +1,154 @@
+$black: #111111;
+$brown: #351717;
+$lightblue: #CFE6FF;
+$header-orange: #E86601;
+
+$sans-serif: 'Helvetica', 'Helvetica World', 'Neue Helvetica', 'Arial', sans-serif;
+$serif: 'Georgia','Times New Roman', serif;
+$u: 80px/7px;
+$u2: $u * 2px;
+
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+		 -moz-border-radius: $radius;
+	 				border-radius: $radius;
+}
+@mixin box-sizing($sizing) {
+	-webkit-box-sizing: $sizing;
+		 -moz-box-sizing: $sizing;
+					box-sizing: $sizing;
+}
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+		 -moz-box-shadow: $shadow;
+					box-shadow: $shadow;
+}
+
+
+body {
+	background-color: $black;
+}
+
+
+
+.top-bar {
+	height:4em;
+	.nav {
+	
+	}
+}
+.top {
+	background-color: $brown;
+	.header {
+	}
+}
+
+.bottom-half {
+	background: url(files/crosswordblue.png) $lightblue;
+	padding-top: $u2;
+}
+
+.middle {
+	.main {
+		position: relative;
+
+	}
+}
+
+.bottom { 
+	clear: left;
+	background:$black;
+	font-size: 1em;
+	.footer {
+		
+	}
+}
+
+
+.container {
+	width: 100%
+}
+
+
+$logo-width: 320px;
+.home-header {
+	height:600px;
+
+	background: url(files/portrait.jpg);
+	background-size: 1000px auto;
+}
+.banner {
+	width: 240px;
+	height: 100%;
+	margin-left: 80px;
+	padding: $u2;
+	@include box-sizing(border-box);
+
+	background-color: #1B1B1B;
+	background-color: rgba(0,0,0,.5);
+	.logo {
+		width: $logo-width;
+		height: 150px;
+		margin-left:-40px;
+
+		background: url(files/logo.png) no-repeat;
+		background-size: 100% auto;
+	}
+}
+
+
+
+
+.contact {
+	position: absolute;
+	left: 480px;
+	width: 50%;
+}
+.bio {
+	width: 50%;
+	padding: $u2;
+	@include border-radius(10px 10px 0 0);
+	@include box-sizing(border-box);
+
+	background: url(crossword.png) #F0F0F0;
+	font-family: $sans-serif;
+	color: #636363;
+	@include box-shadow(10px 10px 20px 0px rgba(0,0,0,0.5));
+
+	h1 {
+		color: $header-orange;
+		font-family: $serif;
+		font-style: italic;
+		font-size: 2.1em;
+		margin-bottom: $u2;
+	}
+	p {
+		margin-bottom: $u2;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	.block {
+		width: 100%;
+	}
+	.nav > ul {
+		display:none;
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+	.block {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+
+
+
