@@ -2,22 +2,24 @@ body {
   background-color: #111111; }
 
 .top-bar {
-  height: 4em; }
+  height: 45.71429px; }
 
 .top {
   background-color: #351717; }
 
 .bottom-half {
   background: url(files/crosswordblue.png) #CFE6FF;
-  padding-top: 22.85714px; }
-
-.middle .main {
-  position: relative; }
-
-.bottom {
-  clear: left;
-  background: #111111;
-  font-size: 1em; }
+  padding-top: 45.71429px; }
+  .bottom-half .middle .main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 45.71429px;
+    position: relative; }
+  .bottom-half .bottom {
+    height: 45.71429px;
+    background: #111111;
+    font-size: 1em; }
 
 .container {
   width: 100%; }

@@ -7,6 +7,7 @@ $sans-serif: 'Helvetica', 'Helvetica World', 'Neue Helvetica', 'Arial', sans-ser
 $serif: 'Georgia','Times New Roman', serif;
 $u: 80px/7px;
 $u2: $u * 2px;
+$u4: $u2 * 2;
 
 
 @mixin border-radius($radius) {
@@ -33,7 +34,7 @@ body {
 
 
 .top-bar {
-	height:4em;
+	height:$u4;
 	.nav {
 	
 	}
@@ -46,24 +47,26 @@ body {
 
 .bottom-half {
 	background: url(files/crosswordblue.png) $lightblue;
-	padding-top: $u2;
-}
+	padding-top: $u4;
 
-.middle {
-	.main {
-		position: relative;
+	.middle {
+		.main {
+			@include box-sizing(border-box);
+		padding: 0 $u4;
+			position: relative;
 
+		}
 	}
-}
 
-.bottom { 
-	clear: left;
-	background:$black;
-	font-size: 1em;
-	.footer {
-		
+	.bottom { 
+		height: $u4;
+		background:$black;
+		font-size: 1em;
+		.footer {
+			
+		}
 	}
-}
+}	
 
 
 .container {
