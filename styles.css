@@ -45,22 +45,19 @@ html, body {
   width: 960px;
   margin: 0 auto;
   position: relative; }
-
-.caption {
-  width: 40%;
-  position: absolute;
-  bottom: 20px;
-  right: 120px;
-  color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border: double 3px #FFFFFF;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.79); }
+  .header > h1 {
+    z-index: 2000;
+    position: absolute;
+    bottom: -80px;
+    font-style: italic;
+    color: #FF9900;
+    font-size: 160px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.79); }
 
 .header-about {
-  height: 400px;
-  background: url(janandvinnie.jpg) rgba(0, 0, 0, 0.5) no-repeat;
-  background-size: 80% auto;
+  height: 200px;
+  background: url(desert.jpg);
+  background-size: 100% auto;
   background-position: center; }
 
 .header-home {
@@ -176,9 +173,10 @@ html, body {
       color: #FFFB00; }
 
 .secondary {
+  position: relative;
   margin: 0 40px;
-  padding: 60px;
-  width: 750px;
+  padding: 60px 360px 60px 60px;
+  width: 430px;
   font-family: 'Helvetica', 'Helvetica World', 'Arial', sans-serif;
   color: #636363;
   background-image: url(crossword.png);
@@ -188,22 +186,24 @@ html, body {
   -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.49);
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.49); }
+  .secondary .image {
+    position: absolute;
+    width: 260px;
+    right: 60px; }
+    .secondary .image img {
+      width: 100%;
+      height: auto; }
   .secondary h1, .secondary h2 {
     margin-bottom: 20px;
     padding: 0 0 0 40px;
     font-family: 'Georgia', serif;
     font-weight: normal; }
-  .secondary h1 {
-    font-style: italic;
-    color: #E86601;
-    border-bottom: solid 1px #636363;
-    font-size: 48px; }
   .secondary h2 {
     color: #C07C43;
     font-size: 40px; }
   .secondary p {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px; }
 
 .bio {
