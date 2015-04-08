@@ -2,7 +2,7 @@ $black: #111111;
 $brown: #351717;
 $lightblue: #CFE6FF;
 $header-orange: #E86601;
-$bright-orange: #FFC100;
+$bright-orange: #FFA000;
 
 $sans-serif: 'Helvetica', 'Helvetica World', 'Neue Helvetica', 'Arial', sans-serif;
 $serif: 'Georgia','Times New Roman', serif;
@@ -157,10 +157,15 @@ header.home {
 		clear:left;
 		background-color: rgba(0, 0, 0, 0.5);
     padding: 1.5em;
-    margin: .5em 0;
+    margin: .8em 0 0 0;
     border: double 3px #FFFFFF; 
     width:100%;
     @include black-shadow;
+
+	@media screen and (max-width: 64em) {
+		margin: 2em 0;
+	}
+
     h2 {
     	font-family: 'Fjalla One', sans-serif;
     	text-transform: uppercase;
@@ -177,7 +182,12 @@ header.home {
     	font-size:.7em;
     	font-family: $serif;
     }
-    p:last-child { @include orange-links; a {font-size:1.5em}}
+    p:last-child { 	
+    		a:after { content: " »"; } 
+    		a {font-size:1.5em}
+				a:link, a:visited { color: #FFBD00;}
+				a:hover { color: yellow;}
+			}
 	}
 }
 
