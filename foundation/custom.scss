@@ -2,7 +2,7 @@ $black: #111111;
 $brown: #351717;
 $lightblue: #CFE6FF;
 $header-orange: #E86601;
-$bright-orange: #FF8C00;
+$bright-orange: #FFC100;
 
 $sans-serif: 'Helvetica', 'Helvetica World', 'Neue Helvetica', 'Arial', sans-serif;
 $serif: 'Georgia','Times New Roman', serif;
@@ -141,41 +141,56 @@ header.home {
 		text-transform: uppercase;
 	}
 	div { text-align:left;}
+	h2 { margin-bottom: 0;}
 	h2>a { color: $brown;}
 	h2>a:hover {color: $bright-orange;}
 	.times {color:white; @include black-shadow; width:400px;margin: 0 auto; padding-bottom:2em; text-align:center;}
-	.time {float:left; width:50%; text-align:center;  width:200px; }
+	.time {float:left; width:50%; text-align:center;  width:200px; font-family: 'Fjalla One', serif; }
 	.weekday { color: $header-orange; padding-right:1em; }
 	.hour {font-weight:bold;}
-	.address {text-align:center; font-family: $serif;}
+	.address {text-align:center; font-family: 'Fjalla One', serif;}
 	@media screen and (max-width:770px){
 		.times {width:200px;}
+		.weekday {display:block; float:left; width:100px; text-align:right;}
 	}
 	.cd {
 		clear:left;
 		background-color: rgba(0, 0, 0, 0.5);
-    padding: 2em;
-    margin: 2em 0;
+    padding: 1.5em;
+    margin: .5em 0;
     border: double 3px #FFFFFF; 
     width:100%;
+    @include black-shadow;
     h2 {
     	font-family: 'Fjalla One', sans-serif;
     	text-transform: uppercase;
     	color: #FFFFFF;
     }
+    .cd-cover{
+    	float:right;
+    	width:33%;
+    	min-width:110px;
+    	padding:.3em;
+    }
+    p {
+    	color: white;
+    	font-size:.7em;
+    	font-family: $serif;
+    }
+    p:last-child { @include orange-links; a {font-size:1.5em}}
 	}
 }
 
 
 .music {
 	position:absolute;
-	bottom:1em;
+	bottom:2em;
 	right:2em;
 
 	p:last-child {
 		position:absolute;
-		bottom:-24px;
-		right: 15px;
+		bottom:-2em;
+		right: 1em;
 		font-variant: small-caps;
 		font-family: $serif;
 		a { color: white;}
