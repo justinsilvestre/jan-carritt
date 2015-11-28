@@ -1,0 +1,324 @@
+$black: #111111;
+$brown: #351717;
+$lightblue: #CFE6FF;
+$header-orange: #E86601;
+$bright-orange: #FFA000;
+
+$sans-serif: 'Helvetica', 'Helvetica World', 'Neue Helvetica', 'Arial', sans-serif;
+$serif: 'Georgia','Times New Roman', serif;
+
+@mixin orange-links {
+		a:after { content: " »"; } 
+		a:link, a:visited { color: $bright-orange;}
+		a:hover { color: yellow;}
+}
+
+@mixin border-top-radius($radius) {
+	-webkit-border-top-left-radius: $radius;
+		 -moz-border-top-left-radius: $radius;
+	 				border-top-left-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+		 -moz-border-top-right-radius: $radius;
+	 				border-top-right-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+		 -moz-box-shadow: $shadow;
+					box-shadow: $shadow;
+}
+
+@mixin black-shadow {
+	-webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+		 -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+					text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+
+.top-bar, .top-bar-section li:not(.has-form) a:not(.button) {
+		background-color: $black;
+}
+
+.nav-wrapper {
+	background-color: $black;
+
+}
+
+.header-wrapper {
+	background: $brown;
+	@include box-shadow(inset 0px -33px 77px -4px rgba(0,0,0,0.75));
+}
+
+.middle-wrapper {
+	background: url(../img/crosswordblue.png) $lightblue;
+	overflow: auto;
+	.row { padding: 2em 2em 0 2em; }
+}
+
+.footer-wrapper {
+	background: $black;
+	color: #D4D4D4;
+	height:5em;
+}
+footer {
+	text-align: center;
+		padding-top:1.5em;
+}
+
+
+header.home {
+	position:relative;
+	background: url(../img/homeportrait.jpg) no-repeat;
+	height: 600px;
+	background-size: 100% auto;
+	@media screen and (max-width:842px) { background-size: auto 100%; }
+
+
+	.logo{
+		width:400px;
+		height:150px;
+		z-index:50;
+		position:absolute;
+		top:70px;
+		left:-30px;
+		background-image: url(../img/logo-letters-cropped.png);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.banner {
+		position:relative;
+		margin-left:30px;
+		width: 320px;
+		height:100%;
+		padding:2em;
+		background: rgba(0,0,0,.5);
+		@include black-shadow;
+	}
+	@media screen and (max-width: 400px) {
+		.banner {
+			width:100%;
+			height:100%;
+			margin-left:auto;
+		}
+		.logo { 
+			width: 100%;top:15px;left:0;}
+	}
+}
+
+.middle-wrapper.home {
+	.bio {
+		float: left;
+		padding:1.5em 2em;
+		background: url(../img/crossword.png) #F5F5F5;
+		color: #4C4C4C;
+		@include border-top-radius(1em);
+		@include box-shadow(10px 10px 20px 0px rgba(0,0,0,0.5));
+		h2 { font-family: $serif; font-size: 2em; font-style: italic; color: $header-orange;
+			text-indent: -2em; margin-left: 2em;}
+		p:last-child { text-align:right; @include orange-links;}
+	}
+	.contact {
+		float:right;
+		@media screen and (min-width:642px) {padding:1.5em 0 2em 2em;}
+		h1 { 
+			display: block;
+			min-height:2em;
+			line-height: 1;
+			padding-right: 7%;
+			padding-left:20%;
+			padding-bottom: 9%;
+			text-align: right;
+			font-family: $serif; 
+			font-size: 2.75rem;
+			/*font-style: italic;*/
+			background: url(../img/logobarwbirdt.png) no-repeat;
+			background-size: 100% 2em;
+			background-position:bottom;}
+	}
+	.rusty-spur {
+		text-align: center;
+		h2, .weekday {
+			font-family: 'Fjalla One', serif;
+			text-transform: uppercase;
+		}
+		div { text-align:left;}
+		h2 { margin-bottom: 0;}
+		h2>a { color: $brown;}
+		h2>a:hover {color: $bright-orange;}
+		.times {color:white; @include black-shadow; width:400px;margin: 0 auto; padding-bottom:2em; text-align:center;}
+		.time {float:left; width:50%; text-align:center;  width:200px; font-family: 'Fjalla One', serif; }
+		.weekday { color: $header-orange; padding-right:1em; }
+		.hour {font-weight:bold;}
+		.address {text-align:center; font-family: 'Fjalla One', serif;}
+		@media screen and (max-width:770px){
+			.times {width:200px;}
+			.weekday {display:block; float:left; width:100px; text-align:right;}
+		}
+		.cd {
+			clear:left;
+			background-color: rgba(0, 0, 0, 0.5);
+	    padding: 1.5em;
+	    margin: .8em 0 0 0;
+	    border: double 3px #FFFFFF; 
+	    width:100%;
+	    @include black-shadow;
+
+		@media screen and (max-width: 64em) {
+			margin: 2em 0;
+		}
+
+	    h2 {
+	    	font-family: 'Fjalla One', sans-serif;
+	    	text-transform: uppercase;
+	    	color: #FFFFFF;
+	    }
+	    .cd-cover{
+	    	float:right;
+	    	width:33%;
+	    	min-width:110px;
+	    	padding:.3em;
+	    }
+	    p {
+	    	color: white;
+	    	font-size:.7em;
+	    	font-family: $serif;
+	    }
+	    p:last-child { 	
+	    		a:after { content: " »"; } 
+	    		a {font-size:1.5em}
+					a:link, a:visited { color: #FFBD00;}
+					a:hover { color: yellow;}
+				}
+		}
+	}
+}
+
+.music {
+	position:absolute;
+	bottom:2em;
+	right:2em;
+
+	p:last-child {
+		position:absolute;
+		bottom:-2em;
+		right: 1em;
+		font-variant: small-caps;
+		font-family: $serif;
+		a { color: white;}
+		a:after { content: " »"}
+	}
+
+	&>ul {
+		@include orange-links;
+		padding: 0;
+		width: 100%;
+		list-style-type: none;
+		color: white;
+		font-family: $serif;
+		&:before { background:url(../img/logobarw.png) center no-repeat; }
+		&:after { background:url(../img/logobarupw.png) center no-repeat; }
+		&:before,&:after {
+			background-size: 90% 20px;
+			content:"";
+			width:100%;
+			height:20px;
+			display:block;
+		}
+		& > li {
+			margin: 0 auto 10px auto;
+			padding: 0 0 0 0;
+
+			
+			&:last-child > ul { border: 0; margin-bottom: 0;}
+			
+			font-variant:small-caps;
+			font-size: 28px;
+			font-weight: bold;
+			text-align: center;
+			&:last-child { 
+				font-size:20px;margin-bottom: 0;
+				ul {margin-top:8px;}
+			}
+			ul{
+				list-style-type: none;
+				padding: 0 0 10px 0;
+				margin: 0 20px 0 20px;
+				font-size: 14px;
+				font-variant: normal;
+				font-weight: 100;
+				border-bottom:dotted 1px #000000;
+				li {
+					padding: 0 7px 0 7px;
+					margin: 0;
+					display: inline-block;
+				}
+			}
+		
+		}
+	}
+}
+
+header h1 {
+
+}
+
+.middle-wrapper.about .main-content {
+	margin-top: 1em;
+	@include border-top-radius(1em);
+
+	background-image: url(../img/crossword.png);
+}
+
+header.about {
+	height: 288px;
+  background-size: 100% auto;
+  background-position: top right;
+	background-image: url(../img/aboutheader.jpg);
+  @media screen and (max-width: 957px) {
+  	background-size: auto 100%;
+  }
+  h1 {
+		color: $bright-orange;
+		font-family: $serif;
+		font-size: 5.4rem;
+		@include black-shadow;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: rgba(0,0,0,.5);
+		padding-left: 1em;
+		@media screen and (max-width: 650px) {
+			font-size: 2.4rem; 
+			padding-left: 0;
+			text-align: center;
+		}
+	}
+}
+
+.contact.main-content {
+	position: relative;
+  background-size: 100% auto;
+  background-position: bottom center;
+	background-image: url(../img/rustyspur.jpg);
+	background-repeat: no-repeat;
+	& > div {
+		padding-top: 66.6992188%;
+		position:relative;
+		width: 100%;
+		.inner {
+			position: absolute;
+			width: 100%;
+			top: 0; left: 0;
+			bottom: 0; right: 0;
+		}
+	}
+
+	.main-content {
+		background: rgba(0,0,0,0.5);
+		color: white;
+	}
+
+
+}
